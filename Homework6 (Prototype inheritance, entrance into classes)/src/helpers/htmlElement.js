@@ -1,26 +1,26 @@
-function HtmlElement(tag, isSelfClosed = false) {
+export function HtmlElement(tag, isSelfClosed = false) {
     this.tag = tag
     this.isSelfClosed = isSelfClosed
     this.text = ''
     this.attributes = new Map()
     this.styles = new Map()
     this.tags = []
+}
 
-    this.setAttribute = function (name, value) {
-        this.attributes.set(name, value)
-    }
+HtmlElement.prototype.setAttribute = function (name, value) {
+    this.attributes.set(name, value)
+}
 
-    this.setStyle = function (name, value) {
-        this.styles.set(name, value)
-    }
+HtmlElement.prototype.setStyle = function (name, value) {
+    this.styles.set(name, value)
+}
 
-    this.enqueue = function (htmlElement) {
-        this.tags.unshift(htmlElement)
-    }
+HtmlElement.prototype.enqueue = function (htmlElement) {
+    this.tags.unshift(htmlElement)
+}
 
-    this.push = function (htmlElement) {
-        this.tags.push(htmlElement)
-    }
+HtmlElement.prototype.push = function (htmlElement) {
+    this.tags.push(htmlElement)
 }
 
 Object.defineProperty(HtmlElement.prototype, 'markup', {
