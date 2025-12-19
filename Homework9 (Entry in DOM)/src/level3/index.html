@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            #tags-container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .skill {
+                margin-bottom: 20px;
+                max-width: 400px;
+            }
+
+            .skill p {
+                font-family: sans-serif;
+                font-weight: bold;
+                margin-bottom: 8px;
+            }
+
+            .bar-container {
+                width: 100%;
+                background-color: #e0e0e0;
+                border-radius: 10px;
+                height: 12px;
+                overflow: hidden;
+            }
+
+            .bar {
+                height: 100%;
+                background-color: #3498db;
+                border-radius: 10px;
+                width: 0;
+                transition: width 1s ease-in-out;
+            }
+        </style>
+        <script src="./index.js" type="module"></script>
+    </head>
+    <body>
+        <!-- Task1 -->
+
+        <div class="stars" data-rating="3"></div>
+        <div class="stars" data-rating="1"></div>
+        <div class="stars" data-rating="5"></div>
+
+        <!-- Task2 -->
+
+        <div id="tags-container" data-tags="news,sport,politics,tech"></div>
+
+        <!-- Task3 -->
+
+        <div class="skill">
+            <p>HTML</p>
+            <div class="bar-container">
+                <div class="bar" data-percent="90"></div>
+            </div>
+            <p>CSS</p>
+            <div class="bar-container">
+                <div class="bar" data-percent="100"></div>
+            </div>
+            <p>C#</p>
+            <div class="bar-container">
+                <div class="bar" data-percent="99"></div>
+            </div>
+            <p>C++</p>
+            <div class="bar-container">
+                <div class="bar" data-percent="80"></div>
+            </div>
+            <p>Python</p>
+            <div class="bar-container">
+                <div class="bar" data-percent="29"></div>
+            </div>
+            <p>Assembler</p>
+            <div class="bar-container">
+                <div class="bar" data-percent="5"></div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Список товарів</title>
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+            }
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 12px;
+                text-align: left;
+            }
+            th {
+                background-color: #f4f4f4;
+            }
+            .quantity {
+                font-weight: bold;
+                color: #333;
+            }
+            .out-of-stock {
+                color: rgba(0, 0, 0, 0.4);
+                text-decoration: line-through;
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+        </style>
+        <script src="./index.js" type="module"></script>
+    </head>
+    <body>
+        <!-- Task1 -->
+        <h2>Склад товарів</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Назва товару</th>
+                    <th>Категорія</th>
+                    <th>Кількість (шт)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ноутбук</td>
+                    <td>Електроніка</td>
+                    <td><span class="quantity">10</span></td>
+                </tr>
+                <tr>
+                    <td>Мишка</td>
+                    <td>Аксесуари</td>
+                    <td><span class="quantity">0</span></td>
+                </tr>
+                <tr>
+                    <td>Клавіатура</td>
+                    <td>Периферія</td>
+                    <td><span class="quantity">5</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Task2 -->
+        <div class="container">
+            <a href="https://google.com">google.com</a>
+            <a href="ftp://archive.zip">archive.zip</a>
+            <a href="mailto:example@gmail.com">send email</a>
+        </div>
+
+        <!-- Task3 -->
+        <div class="gpu-container">
+            <h2>Актуальні відеокарти 2024-2025</h2>
+            <ul class="gpu-list">
+                <li><strong>NVIDIA RTX 4090:</strong> 24GB VRAM, DLSS 3.5</li>
+                <li><strong>AMD RX 7900 XTX:</strong> 24GB VRAM, FSR 3.0</li>
+                <li><strong>NVIDIA RTX 4070:</strong> 12GB VRAM, Енергоефективна</li>
+                <li><strong>Intel Arc A750:</strong> 8GB VRAM, Бюджетний варіант</li>
+                <li><strong>NVIDIA RTX 3050:</strong> 8GB VRAM, Початковий рівень</li>
+                <li><strong>AMD RX 6700 XT:</strong> 12GB VRAM, Хіт минулих років</li>
+                <li><strong>Apple M2 Ultra:</strong> 60-core GPU, Для рендерингу</li>
+                <li><strong>NVIDIA RTX 4060:</strong> 8GB VRAM, Найкраща ціна/якість</li>
+                <li><strong>AMD RX 7700 XT:</strong> 12GB VRAM, Нова архітектура</li>
+                <li><strong>NVIDIA GT 1030:</strong> 2GB VRAM, Для виводу зображення</li>
+            </ul>
+        </div>
+    </body>
+</html>
