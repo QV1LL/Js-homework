@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Level 2, task 3</title>
+        <script src="index.js" type="module"></script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+        <style>
+            .green {
+                color: green;
+            }
+            .yellow {
+                color: darkgoldenrod;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container mt-5">
+            <h3 class="mb-4">Список користувачів</h3>
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center" data-status="active">
+                    <div>
+                        <strong class="d-block">Олександр Іванов</strong>
+                        <small class="text-muted">ID: #1024</small>
+                    </div>
+                    <span class="badge bg-success rounded-pill">Active</span>
+                </li>
+
+                <li class="list-group-item d-flex justify-content-between align-items-center" data-status="pending">
+                    <div>
+                        <strong class="d-block">Марія Коваленко</strong>
+                        <small class="text-muted">ID: #1025</small>
+                    </div>
+                    <span class="badge bg-warning text-dark rounded-pill">Pending</span>
+                </li>
+
+                <li class="list-group-item d-flex justify-content-between align-items-center" data-status="banned">
+                    <div>
+                        <strong class="d-block">Дмитро Петренко</strong>
+                        <small class="text-muted">ID: #1026</small>
+                    </div>
+                    <span class="badge bg-danger rounded-pill">Banned</span>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

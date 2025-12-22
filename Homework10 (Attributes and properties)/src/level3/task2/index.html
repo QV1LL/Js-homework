@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Level 3, task 2</title>
+        <script src="index.js" type="module"></script>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                height: 5000px;
+                background: linear-gradient(to bottom, #4facfe 0%, #00f2fe 100%);
+            }
+            #scroll-progress-bar-container {
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 50px;
+                width: 100%;
+                padding: 12px 25px;
+                pointer-events: none;
+                z-index: 1000;
+            }
+            #scroll-progress-bar {
+                height: 100%;
+                width: 0%;
+                background-color: hsl(120, 80%, 70%);
+                border-radius: 2em;
+                transition: width 0.1s ease-out, background-color 0.2s linear;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="scroll-progress-bar-container">
+            <div id="scroll-progress-bar"></div>
+        </div>
+    </body>
+</html>
