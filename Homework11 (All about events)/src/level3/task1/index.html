@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Level 3, task 1</title>
+        <script src="index.js" type="module"></script>
+        <style>
+            .menu {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1em;
+            }
+
+            #buy-button {
+                padding: 12px 30px;
+                font-size: 16px;
+                font-weight: 600;
+                font-family: 'Segoe UI', sans-serif;
+                color: #ffffff;
+                cursor: pointer;
+                border: none;
+                border-radius: 50px;
+                background: linear-gradient(135deg, #6e8efb, #a777e3);
+                box-shadow: 0 4px 15px rgba(110, 142, 251, 0.4);
+                transition: all 0.3s ease;
+                outline: none;
+                position: relative;
+                overflow: hidden;
+            }
+
+            #buy-button:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 6px 20px rgba(110, 142, 251, 0.6);
+                background: linear-gradient(135deg, #5d7df3, #9661d1);
+            }
+
+            #buy-button:active {
+                transform: translateY(0);
+                box-shadow: 0 2px 10px rgba(110, 142, 251, 0.4);
+            }
+
+            #buy-button::after {
+                content: '';
+                position: absolute;
+                top: -50%;
+                left: -60%;
+                width: 20%;
+                height: 200%;
+                background: rgba(255, 255, 255, 0.2);
+                transform: rotate(30deg);
+                transition: all 0.5s ease;
+            }
+
+            #buy-button:hover::after {
+                left: 120%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="menu">
+            <button id="buy-button">Buy</button>
+            <div id="price-counter" data-total="0">Total price: 0</div>
+        </div>
+    </body>
+</html>

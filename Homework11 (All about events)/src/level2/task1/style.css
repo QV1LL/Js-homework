@@ -1,0 +1,48 @@
+.table-container {
+    position: relative;
+    margin-top: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.table thead {
+    background-color: #212529;
+    color: white;
+}
+
+td.gpu-logo {
+    font-weight: bold;
+    color: #76b900;
+}
+td.amd-logo {
+    font-weight: bold;
+    color: #ed1c24;
+}
+
+tr {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fade-out {
+    opacity: 0;
+    transform: translateX(50px);
+    background-color: rgba(255, 0, 0, 0.1) !important;
+}
+
+.table-container::after {
+    content: 'Press Ctrl + X or click on row to delete it';
+    position: absolute;
+    bottom: -30px;
+    left: 10px;
+    font-size: 0.85rem;
+    color: #000000;
+    background-color: #bababa;
+    border-radius: 2em;
+    padding: 0.5em 1em;
+    font-style: italic;
+    font-family: sans-serif;
+}
+
+.table-container.hide-hint::after {
+    display: none;
+}
