@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Level 2, task 1</title>
+        <script src="index.js" type="module"></script>
+        <style>
+            .scene {
+                perspective: 600px;
+                display: flex;
+                justify-content: center;
+            }
+            .field {
+                position: absolute;
+                background: radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 0%, transparent 70%),
+                    radial-gradient(circle, #2ecc71, #27ae60);
+                top: 100px;
+                width: 500px;
+                height: 500px;
+                border: 3px solid black;
+                transform: rotateX(90deg) rotateZ(180deg);
+                transform-style: preserve-3d;
+            }
+            .menu {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .axes {
+                position: absolute;
+                top: -20px;
+                left: -20px;
+                transform-style: preserve-3d;
+            }
+
+            .axis {
+                position: absolute;
+                width: 300px;
+                height: 4px;
+                transform-origin: left center;
+            }
+
+            .axis.x {
+                background: red;
+                transform: rotateZ(0deg);
+            }
+
+            .axis.x::after {
+                content: 'X';
+                color: red;
+                position: absolute;
+                right: -20px;
+                transform: rotateZ(0deg);
+            }
+
+            .axis.y {
+                background: green;
+                transform: rotateZ(90deg);
+            }
+
+            .axis.y::after {
+                content: 'Y';
+                color: green;
+                position: absolute;
+                right: -20px;
+            }
+
+            .axis.z {
+                background: blue;
+                transform: rotateY(-90deg);
+            }
+
+            .axis.z::after {
+                content: 'Z';
+                color: blue;
+                position: absolute;
+                right: -20px;
+                transform: rotateY(90deg);
+            }
+
+            .axis::before {
+                content: '';
+                position: absolute;
+                right: -10px;
+                top: -3px;
+                border-left: 10px solid currentColor;
+                border-top: 5px solid transparent;
+                border-bottom: 5px solid transparent;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="scene">
+            <div class="field">
+                <div class="axes">
+                    <div class="axis x"></div>
+                    <div class="axis y"></div>
+                    <div class="axis z"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

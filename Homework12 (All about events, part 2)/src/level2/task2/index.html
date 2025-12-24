@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Level 2, task 2</title>
+        <script src="index.js" type="module"></script>
+        <style>
+            body {
+                display: flex;
+                height: 100vh;
+                flex-direction: column;
+                justify-content: center;
+                gap: 2em;
+                align-items: center;
+            }
+            .track {
+                width: 500px;
+                height: 0;
+                border: 0.3em solid gray;
+                border-radius: 1em;
+            }
+            .slider {
+                position: relative;
+                bottom: 1em;
+                left: 0;
+                border: 1em solid darkblue;
+                border-radius: 50%;
+                width: fit-content;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>0%</h2>
+        <div class="track">
+            <div class="slider"></div>
+        </div>
+    </body>
+</html>
