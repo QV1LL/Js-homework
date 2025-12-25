@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Level 3</title>
+        <script src="index.js" type="module"></script>
+        <style>
+            body {
+                background-color: #f5f7fa;
+                font-family: sans-serif;
+            }
+
+            .code-form {
+                display: flex;
+                gap: 12px;
+                width: fit-content;
+                background: white;
+                padding: 30px;
+                border-radius: 12px;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            }
+
+            .code-form input {
+                width: 60px;
+                height: 70px;
+                border: 2px solid #b9bdc1;
+                border-radius: 8px;
+                font-size: 32px;
+                font-weight: bold;
+                text-align: center;
+                color: #2d3436;
+                transition: all 0.2s ease-in-out;
+                outline: none;
+            }
+
+            .code-form input:focus {
+                border-color: #3498db;
+                box-shadow: 0 0 8px rgba(52, 152, 219, 0.2);
+                transform: translateY(-2px);
+            }
+
+            .code-form input::selection {
+                background: transparent;
+            }
+
+            form[name='register'] {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5em;
+                background: #ffffff;
+                padding: 25px;
+                border-radius: 16px;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+                width: 320px;
+            }
+
+            input[name='password'] {
+                width: 100%;
+                padding: 12px;
+                border: 2px solid #e2e8f0;
+                border-radius: 10px;
+                font-size: 16px;
+                transition: all 0.3s ease;
+                outline: none;
+                box-sizing: border-box;
+                margin-bottom: 20px;
+            }
+
+            input[name='password']:focus {
+                border-color: #3b82f6;
+            }
+
+            .password-dependencies {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .dependency {
+                margin: 0;
+                font-size: 14px;
+                color: #64748b;
+                display: flex;
+                align-items: center;
+                transition: color 0.3s ease;
+            }
+
+            .dependency::before {
+                content: '';
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                background-color: #cbd5e1;
+                border-radius: 50%;
+                margin-right: 12px;
+                transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .dependency.valid {
+                color: #1e293b;
+            }
+
+            .dependency.valid::before {
+                background-color: #22c55e;
+                box-shadow: 0 0 8px rgba(34, 197, 94, 0.4);
+            }
+
+            button[type='submit'] {
+                width: 100%;
+                margin-top: 25px;
+                padding: 12px;
+                background-color: #3b82f6;
+                color: white;
+                border: none;
+                border-radius: 10px;
+                font-size: 16px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.2);
+            }
+
+            button[type='submit']:hover {
+                background-color: #2563eb;
+                box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.3);
+                transform: translateY(-1px);
+            }
+
+            button[type='submit']:active {
+                transform: translateY(0);
+            }
+
+            button[type='submit']:disabled {
+                background-color: #94a3b8;
+                cursor: not-allowed;
+                box-shadow: none;
+                transform: none;
+            }
+
+            .location-form {
+                background: white;
+                padding: 30px;
+                border-radius: 16px;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+                display: flex;
+                gap: 20px;
+                width: 100%;
+                max-width: 500px;
+            }
+
+            .select-group {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            label {
+                font-size: 14px;
+                font-weight: 600;
+                color: #4b5563;
+            }
+
+            .select-wrapper {
+                position: relative;
+            }
+
+            .select-wrapper::after {
+                content: '▼';
+                font-size: 10px;
+                color: #9ca3af;
+                position: absolute;
+                right: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+                pointer-events: none;
+            }
+
+            select {
+                width: 100%;
+                padding: 12px 40px 12px 15px;
+                font-size: 16px;
+                color: #1f2937;
+                background-color: #ffffff;
+                border: 2px solid #e5e7eb;
+                border-radius: 10px;
+                cursor: pointer;
+                appearance: none;
+                transition: all 0.2s ease;
+            }
+
+            select:focus {
+                outline: none;
+                border-color: #3b82f6;
+                box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+            }
+
+            select:disabled {
+                background-color: #f9fafb;
+                color: #9ca3af;
+                cursor: not-allowed;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Task1 -->
+        <form class="code-form" name="code-form">
+            <input type="text" name="code" maxlength="1" />
+            <input type="text" name="code" maxlength="1" />
+            <input type="text" name="code" maxlength="1" />
+            <input type="text" name="code" maxlength="1" />
+        </form>
+        <!-- Task2 -->
+        <form name="register">
+            <input type="password" name="password" />
+            <div class="password-dependencies">
+                <p class="dependency" id="length">Довжина > 8 символів</p>
+                <p class="dependency" id="contains-digit">Містить число</p>
+                <p class="dependency" id="contains-uppercase-letter">Містить велику літеру</p>
+            </div>
+            <button type="submit" disabled>Send</button>
+        </form>
+        <!-- Task3 -->
+        <form class="location-form">
+            <div class="select-group">
+                <label for="country">Країна</label>
+                <div class="select-wrapper">
+                    <select id="country" name="country">
+                        <option value="" disabled selected>Оберіть країну</option>
+                        <option value="ua">Україна</option>
+                        <option value="us">США</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="select-group">
+                <label for="city">Місто</label>
+                <div class="select-wrapper">
+                    <select id="city" name="city" disabled>
+                        <option value="" disabled selected>Спочатку оберіть країну</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

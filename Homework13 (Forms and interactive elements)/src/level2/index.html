@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Level 2</title>
+        <script src="index.js" type="module"></script>
+        <style>
+            .passwords-form {
+                display: flex;
+                gap: 0.2em;
+                flex-direction: column;
+            }
+
+            .passwords-form input {
+                width: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Task1 -->
+        <form class="passwords-form" name="password">
+            <input type="password" name="password" placeholder="Enter password" />
+            <input type="password" name="repeat-password" placeholder="Repeat password" />
+        </form>
+        <!-- Task2 -->
+        <form name="send-form">
+            <button id="send-button" disabled>Відправити</button>
+            <input type="checkbox" name="agreement" id="agreement-checkbox" />
+        </form>
+        <!-- Task3 -->
+        <select name="pizza" id="pizza-select"></select>
+        <p id="pizza-price"></p>
+    </body>
+</html>

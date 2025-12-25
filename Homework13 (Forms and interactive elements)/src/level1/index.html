@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Level 1</title>
+        <script src="index.js" type="module"></script>
+        <style>
+            .error-outline {
+                outline: 1px solid red;
+            }
+            .blue-outline {
+                outline: 1px solid blue;
+            }
+            .hint {
+                font-size: 12px;
+                border-radius: 1em;
+                background-color: gainsboro;
+                width: fit-content;
+                padding: 0.25em 1em;
+            }
+            .hidden {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Task1 -->
+        <form name="email">
+            <input name="email" type="email" />
+            <div class="hint hidden">Введіть ваш робочий email</div>
+        </form>
+        <!-- Task2 -->
+        <input id="text-input" name="text" type="text" />
+        <span id="mirror"></span>
+        <!-- Task3 -->
+        <form name="pick-color-form">
+            <input type="radio" name="color" id="1" data-color="red" />
+            <input type="radio" name="color" id="2" data-color="blue" />
+            <input type="radio" name="color" id="3" data-color="green" />
+        </form>
+    </body>
+</html>
