@@ -5,6 +5,110 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Level 3, task 1</title>
         <script src="index.js" type="module"></script>
+        <style>
+            body {
+                display: flex;
+                justify-content: space-around;
+                align-items: flex-start;
+                background-color: #f4f5f7;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                padding: 20px;
+            }
+
+            .dashboard {
+                background-color: #ebedf0;
+                border-radius: 8px;
+                width: 30%;
+                min-height: 200px;
+                padding: 10px;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+            }
+
+            .dashboard-title {
+                font-weight: bold;
+                font-size: 1.1rem;
+                padding: 8px;
+                margin-bottom: 10px;
+                color: #172b4d;
+            }
+
+            .task-container {
+                min-height: 100px;
+            }
+
+            .dragover {
+                background-color: #dfe1e6;
+                border: 2px dashed #4c9aff;
+                border-radius: 8px;
+                box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+            }
+
+            .task-card {
+                background-color: #ffffff;
+                border-radius: 5px;
+                padding: 12px;
+                margin-bottom: 8px;
+                box-shadow: 0 1px 0 rgba(9, 30, 66, 0.25);
+                cursor: grab;
+                user-select: none;
+                transition: transform 0.1s ease, box-shadow 0.1s ease;
+            }
+
+            .task-card:active {
+                cursor: grabbing;
+            }
+
+            .task-card:hover {
+                background-color: #f4f5f7;
+                border-left: 4px solid #4c9aff;
+            }
+
+            .dragging {
+                opacity: 0.5;
+                transform: scale(0.95);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+                border: 1px dashed #4c9aff;
+            }
+
+            .task-text {
+                font-size: 0.95rem;
+                color: #333;
+                margin: 0;
+            }
+        </style>
     </head>
-    <body></body>
+    <body>
+        <div class="dashboard">
+            <p class="dashboard-title">Треба зробити</p>
+            <div class="task-container">
+                <div class="task-card">
+                    <p class="task-text">Design the landing page</p>
+                </div>
+                <div class="task-card">
+                    <p class="task-text">Fix navigation bug</p>
+                </div>
+                <div class="task-card">
+                    <p class="task-text">Update user documentation</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard">
+            <p class="dashboard-title">В процесі</p>
+            <div class="task-container">
+                <div class="task-card">
+                    <p class="task-text">Refactoring API calls</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard">
+            <p class="dashboard-title">Готово</p>
+            <div class="task-container">
+                <div class="task-card">
+                    <p class="task-text">Setup project environment</p>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
