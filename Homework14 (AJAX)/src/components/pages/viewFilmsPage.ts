@@ -82,7 +82,7 @@ export const getViewMoviesPage = (
         }
 
         movies.forEach((movie) => {
-            moviesMap.set(String(movie.id), movie)
+            moviesMap.set(`${movie.id}`, movie)
 
             const card = getMovieCard(movie)
             card.style.cursor = 'pointer'
