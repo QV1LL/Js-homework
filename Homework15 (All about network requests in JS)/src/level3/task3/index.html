@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Level 3, task 3</title>
+        <script src="index.js" type="module"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-slate-100 min-h-screen flex items-center justify-center p-4">
+        <div class="w-full max-w-md bg-white rounded-xl shadow-lg p-6 border border-slate-200">
+            <h2 class="text-xl font-bold text-slate-800 mb-4">Копіювання тексту</h2>
+
+            <div class="mb-4">
+                <textarea
+                    id="text-source"
+                    class="w-full h-32 p-4 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 focus:outline-none resize-none text-slate-700 placeholder-slate-400"
+                    placeholder="Введіть текст для копіювання..."
+                >
+Привіт! Це тестовий текст для буфера обміну.</textarea
+                >
+            </div>
+
+            <button
+                id="copy-btn"
+                class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-4 rounded-lg transition-all active:scale-95 disabled:bg-slate-400 disabled:cursor-not-allowed disabled:active:scale-100"
+            >
+                Копіювати
+            </button>
+        </div>
+    </body>
+</html>
