@@ -1,0 +1,165 @@
+.container {
+    min-height: 100vh;
+    background-color: #f9fafb;
+}
+
+.header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    padding: 16px;
+}
+
+.headerContent {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+@media (min-width: 768px) {
+    .headerContent {
+        flex-direction: row;
+    }
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #2563eb;
+    margin: 0;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .controls {
+        width: auto;
+    }
+}
+
+.searchForm {
+    display: flex;
+    flex: 1;
+    gap: 8px;
+}
+
+@media (min-width: 768px) {
+    .searchForm {
+        width: 320px;
+    }
+}
+
+.input {
+    flex: 1;
+    padding: 8px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    transition: ring 0.2s;
+}
+
+.input:focus {
+    box-shadow: 0 0 0 2px #3b82f6;
+}
+
+.searchBtn {
+    background-color: #1f2937;
+    color: #ffffff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.searchBtn:hover {
+    background-color: #000000;
+}
+
+.select {
+    padding: 8px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background-color: #ffffff;
+    outline: none;
+    cursor: pointer;
+}
+
+.addBtn {
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition:
+        transform 0.1s,
+        background-color 0.2s;
+}
+
+.addBtn:hover {
+    background-color: #1d4ed8;
+}
+
+.addBtn:active {
+    transform: scale(0.95);
+}
+
+.main {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+
+.modalOverlay {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    padding: 16px;
+}
+
+.modalBox {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    max-width: 448px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.cancelLink {
+    width: 100%;
+    margin-top: 8px;
+    padding: 8px;
+    background: transparent;
+    border: none;
+    color: #9ca3af;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.cancelLink:hover {
+    color: #4b5563;
+}
