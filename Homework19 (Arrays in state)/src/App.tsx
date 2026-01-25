@@ -1,9 +1,12 @@
 import AddTag from './components/AddTag'
 import Comments from './components/Comments'
 import LiftingStateExample from './components/LiftingStateExample'
+import OnlineShop from './components/OnlineShop'
 import Posts from './components/Posts'
+import ProductsLayout from './components/ProductsLayout'
 import RegistrationForm from './components/RegistrationForm'
 import TaskContainer from './components/TaskContainer'
+import TasksEditor from './components/TasksEditor'
 import UserProfile from './components/UserProfile'
 
 function App() {
@@ -29,6 +32,17 @@ function App() {
                 </TaskContainer>
                 <TaskContainer title="Task 3">
                     <Posts />
+                </TaskContainer>
+            </TaskContainer>
+            <TaskContainer title='Level 3 "Архітектор Дашбордів" (State Architect)'>
+                <TaskContainer title="Task 1">
+                    <ProductsLayout />
+                </TaskContainer>
+                <TaskContainer title="Task 2">
+                    <TasksEditor />
+                </TaskContainer>
+                <TaskContainer title="Task 3">
+                    <OnlineShop />
                 </TaskContainer>
             </TaskContainer>
         </>

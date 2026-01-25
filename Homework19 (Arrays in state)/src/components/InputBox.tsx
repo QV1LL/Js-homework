@@ -1,13 +1,15 @@
 type InputBoxProps = {
+    value?: string
     onInput?: (e: React.FormEvent<HTMLInputElement>) => void
     name?: string
     type?: string
     placeholder?: string
 }
 
-const InputBox = ({ onInput, name, type, placeholder }: InputBoxProps) => {
+const InputBox = ({ value, onInput, name, type, placeholder }: InputBoxProps) => {
     return (
         <input
+            value={value}
             onInput={(e) => {
                 if (onInput) onInput(e)
             }}
