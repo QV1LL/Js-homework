@@ -1,0 +1,36 @@
+{
+  "products": [
+    {
+      "id": "b1a4",
+      "inStock": true,
+      "description": "Phone",
+      "category": "electronics",
+      "price": 1200,
+      "name": "Iphone 15 Pro"
+    },
+    {
+      "inStock": true,
+      "description": "",
+      "category": "electronics",
+      "price": 699,
+      "name": "Samsung S25 FE",
+      "id": "bPG1gn2"
+    },
+    {
+      "inStock": true,
+      "description": "",
+      "category": "electronics",
+      "price": 1000,
+      "name": "Asus Rog Strigs G731",
+      "id": "bHrcmO5"
+    },
+    {
+      "inStock": true,
+      "description": "",
+      "category": "electronics",
+      "price": 1500,
+      "name": "Macbook Air",
+      "id": "v99PE6M"
+    }
+  ]
+}
