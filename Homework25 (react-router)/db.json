@@ -1,0 +1,104 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "title": "Wireless Noise Cancelling Headphones",
+            "description": "Premium over-ear headphones with active noise cancellation and 30-hour battery life.",
+            "price": 299,
+            "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=600",
+            "category": "audio"
+        },
+        {
+            "id": "2",
+            "title": "Mechanical Gaming Keyboard",
+            "description": "RGB backlit mechanical keyboard with tactile blue switches and programmable keys.",
+            "price": 89,
+            "imageUrl": "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?q=80&w=600",
+            "category": "peripherals"
+        },
+        {
+            "id": "3",
+            "title": "Ultra-Wide Curved Monitor",
+            "description": "34-inch 144Hz curved display perfect for immersive gaming and productivity.",
+            "price": 450,
+            "imageUrl": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=600",
+            "category": "electronics"
+        },
+        {
+            "id": "4",
+            "title": "Ergonomic Wireless Mouse",
+            "description": "High-precision optical sensor with ergonomic thumb rest for all-day comfort.",
+            "price": 55,
+            "imageUrl": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?q=80&w=600",
+            "category": "peripherals"
+        },
+        {
+            "id": "5",
+            "title": "Smart Fitness Watch",
+            "description": "Track your steps, heart rate, and sleep with this sleek waterproof smartwatch.",
+            "price": 129,
+            "imageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=600",
+            "category": "wearables"
+        },
+        {
+            "id": "6",
+            "title": "Portable Bluetooth Speaker",
+            "description": "Compact speaker with deep bass and IPX7 waterproof rating for outdoor use.",
+            "price": 45,
+            "imageUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTkDuU-EVySJ1Kv3gqVQFbKvGkbsoEuWKnP4CEc4M0xVl_YLGQ_K9A8gulw2lv5VlA52hwoFbhbavjRQC8mbF1q1eZf0oNZui3orSRS3mnya79U-dfaYC-WjiPjqlZfuZheqWHm5Q&usqp=CAc",
+            "category": "audio"
+        },
+        {
+            "id": "7",
+            "title": "4K Action Camera",
+            "description": "Capture your adventures in stunning 4K resolution with image stabilization.",
+            "price": 199,
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTksKApwI1GHJMqnkrBQE9GkBxxvpokzBvahg&s",
+            "category": "electronics"
+        },
+        {
+            "id": "8",
+            "title": "Leather Laptop Sleeve",
+            "description": "Premium genuine leather sleeve designed for 13-14 inch laptops.",
+            "price": 35,
+            "imageUrl": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?q=80&w=600",
+            "category": "accessories"
+        },
+        {
+            "id": "9",
+            "title": "USB-C Hub Adapter",
+            "description": "7-in-1 adapter with 4K HDMI, USB 3.0 ports, and SD card reader.",
+            "price": 29,
+            "imageUrl": "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=600",
+            "category": "accessories"
+        },
+        {
+            "id": "10",
+            "title": "Minimalist Desk Lamp",
+            "description": "LED desk lamp with adjustable brightness and wireless charging base.",
+            "price": 65,
+            "imageUrl": "https://cdn.thewirecutter.com/wp-content/media/2025/07/BEST-DESK-LAMPS-SUB-2048px-5579.jpg?auto=webp&quality=75&width=1024",
+            "category": "accessories"
+        }
+    ],
+    "news": [
+        {
+            "id": "1",
+            "title": "The Future of Wireless Audio: What to Expect in 2026",
+            "text": "As we move further into 2026, the boundaries of wireless audio are being pushed like never before. Our latest research into Lossless Audio Transmission (LAT) suggests that Bluetooth limitations are finally becoming a thing of the past.\n\nKey improvements you will notice in our upcoming product line:\n1. Zero-latency gaming modes for competitive play.\n2. AI-driven environmental awareness that adjusts transparency levels in real-time.\n3. Battery tech that provides up to 100 hours of playback on a single charge.\n\nWe are committed to bringing these innovations to our store by the second quarter of this year. Stay tuned for the official launch event!",
+            "createdAt": "2026-02-11T10:00:00.000Z"
+        },
+        {
+            "id": "2",
+            "title": "Sustainable Tech: Our Journey to Zero Carbon",
+            "text": "Sustainability is no longer an option; it's a necessity. At Products Store, we've spent the last six months auditing our entire supply chain to ensure that every accessory we sell meets strict environmental standards.\n\nStarting next month, all our packaging will be 100% plastic-free. We are switching to mushroom-based packaging and soy-based inks. This transition is part of our larger goal to become carbon-neutral by 2030.\n\nFurthermore, we are launching a trade-in program. Send us your old electronics, and receive a 20% discount on any carbon-certified product in our new collection. Together, we can reduce e-waste and build a circular economy.",
+            "createdAt": "2026-02-05T14:30:00.000Z"
+        },
+        {
+            "id": "3",
+            "title": "Community Spotlight: How You Use Our Gadgets",
+            "text": "Last month, we asked our community to share their setups using our peripherals. The response was overwhelming! From minimalist home offices in Kyiv to high-end gaming battlestations in Berlin, your creativity is inspiring.\n\nOne particular standout was a developer who used our USB-C Hubs to create a mobile workstation powered entirely by solar energy. It’s stories like these that remind us why we do what we do.\n\nIn this article, we’ve curated the top 5 setups of the month. Check them out and get inspired for your next desk upgrade. Don't forget to tag us in your photos for a chance to be featured in our March spotlight!",
+            "createdAt": "2026-01-28T09:15:00.000Z"
+        }
+    ]
+}
