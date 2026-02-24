@@ -1,7 +1,6 @@
-import { AddContactForm } from './AddContactForm'
-import { ContactList } from './ContactsList'
+import { AddContactForm, ContactsList } from '@/features/contacts'
 
-export const Task1 = () => {
+export const Task13 = () => {
     return (
         <div className="max-w-2xl mx-auto space-y-8">
             <section>
@@ -10,7 +9,7 @@ export const Task1 = () => {
             </section>
 
             <section>
-                <ContactList />
+                <ContactsList />
             </section>
         </div>
     )

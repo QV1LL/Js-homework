@@ -13,6 +13,8 @@ const contactsSlice = createSlice({
     initialState,
     reducers: {
         contactAdded: contactsAdapter.addOne,
+        contactsRemoved: contactsAdapter.removeMany,
+        contactUpdated: contactsAdapter.updateOne,
     },
 })
 
@@ -20,5 +22,5 @@ export const { selectAll: selectAllContacts, selectById: selectContactById } = c
     (state: RootState) => state.contacts,
 )
 
-export const { contactAdded } = contactsSlice.actions
+export const { contactAdded, contactsRemoved, contactUpdated } = contactsSlice.actions
 export const contactsReducer = contactsSlice.reducer

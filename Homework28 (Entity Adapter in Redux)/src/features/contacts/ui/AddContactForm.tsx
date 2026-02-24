@@ -4,13 +4,13 @@ import { Button, Input } from '@/components'
 import { nanoid } from '@reduxjs/toolkit'
 import { contactAdded } from '../model/contactsSlice'
 
+const PHONE_REGEX = /^(?:\+?38)?0\d{9}$/
+
 export const AddContactForm = () => {
     const dispatch = useDispatch()
     const [name, setName] = useState('')
     const [phone, setPhone] = useState('')
     const [error, setError] = useState<string | null>(null)
-
-    const phoneRegex = /^(?:\+?38)?0\d{9}$/
 
     const handleAdd = () => {
         if (!name.trim()) {
@@ -18,7 +18,7 @@ export const AddContactForm = () => {
             return
         }
 
-        if (!phoneRegex.test(phone.trim())) {
+        if (!PHONE_REGEX.test(phone.trim())) {
             setError('Invalid phone format')
             return
         }
@@ -61,7 +61,7 @@ export const AddContactForm = () => {
                         value={phone}
                         onChange={handleInputChange(setPhone)}
                         onKeyDown={(e) => e.key === 'Enter' && handleAdd()}
-                        className={error && !phoneRegex.test(phone) ? 'border-destructive' : ''}
+                        className={error && !PHONE_REGEX.test(phone) ? 'border-destructive' : ''}
                     />
                     <Button onClick={handleAdd}>Add</Button>
                 </div>
